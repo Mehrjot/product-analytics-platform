@@ -9,5 +9,3 @@ data/raw/
 data/processed/
 
 *.log
-
-*.pbix
