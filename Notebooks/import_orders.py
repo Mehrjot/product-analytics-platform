@@ -2,7 +2,7 @@ import pandas as pd
 from sqlalchemy import create_engine
 
 username = "root"
-password = "root"   # replace if different
+password = "root"      # change if different
 host = "localhost"
 database = "product_analytics"
 
@@ -14,7 +14,7 @@ df = pd.read_csv(
     "data/raw/olist_orders_dataset.csv"
 )
 
-print(df.shape)
+print("Orders Shape:", df.shape)
 
 df.to_sql(
     "orders",
